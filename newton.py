@@ -6,7 +6,7 @@ def optimize(x0, fun):
     while abs(change) > 1e-6:
         xold = x
         x = x - eps * deriv(x, fun, h) / deriv2(x, fun, h)
-        change = fun(x) - fun(xold)
+        change = x - xold
     return [x, fun(x)]
 
 

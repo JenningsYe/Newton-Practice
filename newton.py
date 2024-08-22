@@ -1,7 +1,7 @@
 def optimize(x0, fun):
     err=1
     x=x0
-    h=0.1
+    h=1e-3
     eps =1e-2;
     while abs(change) > 1e-6:
         xold=x
